@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zek-03-wzx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="0Xa-VU-ork">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="ovi-2F-oXb" customClass="SecondViewController" customModule="SeSAC2Week7Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Msf-0m-cDB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8Cw-rF-fUu"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrS-7f-Vv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="135"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="DGP-h9-4k5">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" id="fBQ-X0-TM3" customClass="ThirdViewController" customModule="SeSAC2Week7Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zu-Zr-cD8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cm9-im-qUW"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHW-Ff-aC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6YO-cH-8gD">
+            <objects>
+                <viewController id="zek-03-wzx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1p-7U-7R0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-eQ-QaA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="y0A-TW-gCd"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ARj-cM-gZr" kind="embed" id="G8z-Tn-GvZ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="miN-Q7-IlT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aOg-eQ-QaA" firstAttribute="leading" secondItem="miN-Q7-IlT" secondAttribute="leading" id="D56-H6-F9q"/>
+                            <constraint firstItem="aOg-eQ-QaA" firstAttribute="top" secondItem="miN-Q7-IlT" secondAttribute="top" id="HzW-FC-CnJ"/>
+                            <constraint firstItem="miN-Q7-IlT" firstAttribute="trailing" secondItem="aOg-eQ-QaA" secondAttribute="trailing" id="dk8-lm-uKs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwR-NP-jhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1414" y="135"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ME1-Jv-sRc">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ARj-cM-gZr" customClass="PageViewController" customModule="SeSAC2Week7Diary" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8R-ZK-nyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="-98"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="Y6W-OH-hqX" customClass="FirstViewController" customModule="SeSAC2Week7Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6o-Ug-Uky">
+                                <rect key="frame" x="30" y="94" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JPL-TK-20a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HI5-2V-62v">
+                                <rect key="frame" x="157" y="202" width="100" height="5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="1MF-9e-oN8"/>
+                                    <constraint firstAttribute="width" constant="100" id="O76-3n-B8r"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JC4-RX-S2V">
+                                <rect key="frame" x="304" y="53" width="100" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fox-hM-ov5"/>
+                                    <constraint firstAttribute="width" constant="100" id="nSH-ml-fRn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="h6o-Ug-Uky" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="1JA-0S-fBx"/>
+                            <constraint firstItem="HI5-2V-62v" firstAttribute="top" secondItem="h6o-Ug-Uky" secondAttribute="bottom" constant="8" id="3AW-oD-qdM"/>
+                            <constraint firstItem="h6o-Ug-Uky" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="5k2-ML-IM8"/>
+                            <constraint firstItem="JC4-RX-S2V" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Fzu-Ft-eTA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JC4-RX-S2V" secondAttribute="trailing" constant="10" id="RWr-OR-hOd"/>
+                            <constraint firstItem="HI5-2V-62v" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="av5-Fj-kyC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h6o-Ug-Uky" secondAttribute="trailing" constant="30" id="shX-ae-iYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blackView" destination="HI5-2V-62v" id="NVI-em-l5u"/>
+                        <outlet property="blackViewWidth" destination="O76-3n-B8r" id="6LB-X8-4k5"/>
+                        <outlet property="starImageView" destination="JC4-RX-S2V" id="pv8-cW-duu"/>
+                        <outlet property="tutorialLabel" destination="h6o-Ug-Uky" id="kUi-ft-cJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
